@@ -1,0 +1,23 @@
+h1 {
+    color: red;
+    background-color: aliceblue;
+    font-size: larger;
+}
+
+h2 {
+    color: red;
+    background-color: aliceblue;
+    font-size: larger;
+}
+
+h3 {
+    color: red;
+    background-color: aliceblue;
+    font-size: larger;
+}
+
+P {
+    color: rgb(255, 105, 105);
+    background-color: antiquewhite;
+    font-size: large;
+}
