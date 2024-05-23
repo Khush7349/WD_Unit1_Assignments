@@ -1,0 +1,218 @@
+WEB PAGE:
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpyxFamily</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Danfo&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        
+        nav {
+            background-color: #d0ffd6;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 1rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 0.5rem 1rem;
+        }
+        
+        nav a:hover {
+            background-color: aquamarine;
+            color: black;
+            border-radius: 4px;
+        }
+        
+        header {
+            background-color: black;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        #home h1,
+        #aboutus h1,
+        #contact h1 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        
+        #home p,
+        #aboutus p {
+            color: black;
+            line-height: 1.6;
+        }
+        
+        #images {
+            height: 250px;
+            width: 400px;
+            padding: 10px;
+            background-color: beige;
+            border-radius: 0% 50% 0% 50%;
+        }
+        
+        #images img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0% 50% 0% 50%;
+        }
+        
+        #content {
+            height: 250px;
+            width: 250px;
+            padding: 10px;
+            background-color: rgb(185, 115, 144);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            border-radius: 15px;
+        }
+        
+        #homediv {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        #aboutus {
+            background-color: rgb(181, 221, 240);
+            border-radius: 15px;
+            padding: 2rem;
+        }
+        
+        #contact {
+            background-color: plum;
+            border-radius: 15px;
+            padding: 2rem;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        form label {
+            margin-top: 1rem;
+        }
+        
+        form input,
+        form textarea {
+            width: 80%;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        form button {
+            padding: 0.5rem 1rem;
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+        
+        form button:hover {
+            background-color: #e85c50;
+        }
+        
+        footer {
+            background-color: cadetblue;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        
+        footer #socialmedia a img {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#aboutus">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to SPYxFAMILY!</h1>
+        <div id="homediv">
+            <div id="images">
+                <img src="https://theouterhaven.b-cdn.net/wp-content/uploads/2022/04/Spy-x-Family-Teaser-Image.jpg"></div<img>
+            </div>
+            <div id="content">
+                <p>Spy x Family is a Japanese manga series written and illustrated by Tatsuya Endo, which focuses on a normal family of a kid Anya, father Loid, who is a doctor, and mother Yor, who is a civil servant. Or is it?</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="aboutus">
+        <h1>About Us</h1>
+        <h2>Twilight (Loid Forger)</h2>
+        <p>A skilled spy who adopts the identity of Loid Forger, a psychiatarist to infiltrate Eden College.</p>
+        <h2>Thorn Princess(Yor Briar)</h2>
+        <p>A civil servant,and a skilled assasin who becomes Loid's wife and adopts the identity of Yor Forger.</p>
+        <h2>Any Forger</h2>
+        <p>A telepathic girl who becomes Loid and Yor's adopted daughter.</p>
+        <p>To enter into this exciting world, Contact us now.</p>
+    </section>
+    <br>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <img src="https://th.bing.com/th/id/OIP.s2ujnz2bE3aA6dBOiRR38AHaLH?rs=1&pid=ImgDetMain" height="700" , width="700">
+    </div>
+    <br>
+    <section id="contact">
+        <h1>Contact Form</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <h3>Developed By</h3>
+
+        <div id="socialmedia">
+            <a href="#"><img src="https://c7.uihere.com/files/704/270/449/social-media-instagram-login-photography-ig-thumb.jpg"></a>
+            <a href="#"><img src="https://th.bing.com/th/id/OIP.z3JWNGeUG9UnBuErrriUqwHaE8?rs=1&pid=ImgDetMain"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
